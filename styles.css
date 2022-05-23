@@ -51,19 +51,17 @@ h2 {
     height: 400px; 
     border: 3px solid #41809F;
 }
-#aboutMeText{
-    margin: 50px;
-    height: 400px; 
-    width: 60%;
-    background-color: rgba(184, 214, 225, .9);
-    border: 3px solid #41809F;
-}
 
 .left {
     width: 30%;
 }
 
 #blockOneText{
+    margin: 50px;
+    height: 400px; 
+    width: 60%;
+    background-color: rgba(184, 214, 225, .9);
+    border: 3px solid #41809F;
     text-align: left;
     font-family: 'Roboto Mono', monospace;
     font-size: 20;

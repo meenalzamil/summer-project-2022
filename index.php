@@ -22,16 +22,10 @@
             <div class="left">
                 <img id="profileImage" src="profile.jpeg" alt="Meena's Picture"/>
             </div>
-            <div id="aboutMeText" class="right">
-                <div id="blockOneText">
-                    <!-- <h1> Meena Zamil</h1> -->
-                    <!-- <p> Hello!</p> -->
-                    <br/>
-                    <p>Welcome to my page! I am so excited to finally have a site to highlight the different sides of myself, which can range from academics and work to creative endeavors and my current obsessions. When I began this process, I viewed this as a short-term project with no design or layout in mind. As I have progressed, I have found a new love of digitally creating visuals using color pallets and images. I now plan to continue editing and re-designing this page, almost as to fit my changing identity as I grow. You will find that many of the posts are in the form of a letter. I have always loved writing and receiving letters, so it only feels right to add that love into this site. Thank you for being here as I discover more about myself!
-                    </p>
-
-
-                </div>
+            <div id="blockOneText" class="right">
+                <br/>
+                <p>Welcome to my page! I am so excited to finally have a site to highlight the different sides of myself, which can range from academics and work to creative endeavors and my current obsessions. When I began this process, I viewed this as a short-term project with no design or layout in mind. As I have progressed, I have found a new love of digitally creating visuals using color pallets and images. I now plan to continue editing and re-designing this page, almost as to fit my changing identity as I grow. You will find that many of the posts are in the form of a letter. I have always loved writing and receiving letters, so it only feels right to add that love into this site. Thank you for being here as I discover more about myself!
+                </p>
             </div>
         </div>
     </div>
@@ -45,7 +39,7 @@
     <div id="blockTwo">
         <div id="backgroundTwo">
         </div>
-        <div class="row">
+            <div  class="row">
             <div class="space">
                 <a class="linking" href="classes.html"><h2 class="blockTwoColor">Classes</h2></a>
                 <p class="aboutMe">There are so many amazing classes I have taken since starting college, both related and unrelated to my major program. Here are some of my favorite or most influntial classes and why they left such an impact. </p>
