@@ -14,10 +14,23 @@
     grid-template-columns: auto auto auto auto auto auto auto auto;
   }
 
-  .grid-item {
-    background-color: rgba(255, 255, 255, 0.8);
+  .grid-item-black {
+    /* color: red; */
+    background-color: black;
     border: 1px solid rgba(0, 0, 0, 0.8);
     padding: 20px;
     font-size: 30px;
     text-align: center;
+    height: 30px; 
+    width: 30px;
+  }
+  .grid-item-white {
+    /* color: red; */
+    background-color: rgb(85, 113, 240);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    height: 30px; 
+    width: 30px;
   }
