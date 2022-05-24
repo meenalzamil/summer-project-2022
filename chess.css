@@ -1,0 +1,23 @@
+.black {
+    background-color: black; 
+    height: 100px; 
+    width: 100px;
+}
+.white {
+    background-color: rgb(189, 189, 189); 
+    height: 100px; 
+    width: 100px;
+}
+.grid-container {
+    display: inline-grid;
+    /* grid-column: 8; */
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+  }
+
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
