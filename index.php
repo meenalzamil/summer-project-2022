@@ -15,7 +15,7 @@
     echoHeader();
     firstBlock();
     breaks();
-    blocks($blockNumber = 'blockTwo', $backgroundImage = 'backgroundTwo', $row = 'row', $block = 'space', $linking='linking', $href='displayPosts.php', $textTag='aboutMe', $color='blockTwoColor', $sectionOne = 'Work Experience', $sectionTwo = 'Who Am I', $sectionThree = 'Classes');
+    blocks($blockNumber = 'blockTwo', $backgroundImage = 'backgroundTwo', $row = 'row', $block = 'space', $linking='linking', $href='displayPosts.php', $textTag='aboutMe', $color='blockTwoColor', $sectionOne = 'Classes', $sectionTwo = 'Who Am I', $sectionThree = 'Work Experience');
     breaks();
     blocks($blockNumber = 'blockThree', $backgroundImage = 'backgroundThree', $row = 'row', $block = 'spaceThree', $linking='linkingAgain', $href='displayPosts.php', $textTag='greenSection', $color='blockThreeColor', $sectionOne = 'Hobbies', $sectionTwo = 'Creations', $sectionThree = 'Favorites');
     footer();
