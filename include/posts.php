@@ -2,21 +2,27 @@
 function useArray(){
     $postArray = array();
     $postArray['#1'] = array(
-        "sectionName" => ""
+        "sectionName" => "Classes"
+        
     );
     $postArray['#2'] = array(
+        "sectionName" => "About Me"
 
     );
     $postArray['#3'] = array(
+        "sectionName" => "Work Experience"
 
     );
     $postArray['#4'] = array(
+        "sectionName" => "Favorites"
 
     );
     $postArray['#5'] = array(
+        "sectionName" => "Hobbies"
 
     );
     $postArray['#6'] = array(
+        "sectionName" => "Creations"
 
     );
     // $postArray="hi";
