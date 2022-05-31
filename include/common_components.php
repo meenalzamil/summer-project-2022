@@ -35,6 +35,12 @@ function firstBlock (){
     </div>
     ";
 }
+//ideally every block should have the same css stuff
+// function echoBlockWrapper ($backgroundImage(include this inline to minimize the css), $innerHTML (whatever content I want with the innerHTML)){
+
+// }
+
+
 function blocks($blockNumber, $backgroundImage, $row, $block, $linking, $href, $textTag, $color, $sectionOne, $sectionTwo, $sectionThree, $textOne, $textTwo, $textThree){
     echo "<div id='".$blockNumber."'>
     <div id='".$backgroundImage."'>
