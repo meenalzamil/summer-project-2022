@@ -7,11 +7,11 @@
     image($backgroundImage='backgroundTwo');
     foreach(getAllPosts() as $postID => $post){
         if ($postID == 3){
-            exit;
+            break;
         }
         echo"
         <div class='space'>
-            <a class='linking' href='displayPosts.php?postID=$postID'><h2 class='blockTwoColor'>$post[title]</h2></a>
+            <a style='color: #B082A0' href='displayPosts.php?postID=$postID'><h2 class='blockTwoColor'>$post[title]</h2></a>
             <div class='aboutMe'>$post[summary]</div>
         </div>
         ";
@@ -21,14 +21,14 @@
     blocks();
     image($backgroundImage='backgroundThree');
     foreach(getAllPosts() as $postID => $post){
-        if ($postID > 2){
+        if($postID >= 3){
             echo"
-            <div class='space'>
-                <a class='linking' href='displayPosts.php?postID=$postID'><h2 class='blockTwoColor'>$post[title]</h2></a>
-                <div class='aboutMe'>$post[summary]</div>
+            <div class='spaceThree'>
+                <a style='color: #27676D' href='displayPosts.php?postID=$postID'><h2 class='blockThreeColor'>$post[title]</h2></a>
+                <div class='greenSection'>$post[summary]</div>
             </div>
             ";
-        }
+         }
     }
     closeBlock();
     footer();
@@ -37,22 +37,21 @@
     <!-- //loop through the sections and echo the block for each section, from here loop through -->
 <!-- 
 
-        $blockNumber = 'blockTwo', 
-        $backgroundImage = 'backgroundTwo', 
+        $blockNumber = 'blockThree', 
+        $backgroundImage = 'backgroundThree', 
         $row = 'row', 
-        $block = 'space', 
-        $linking='linking', 
+        $block = 'spaceThree', 
+        $linking='linkingAgain', 
         $href='displayPosts.php', 
-        $textTag='aboutMe', 
-        $color='blockTwoColor', 
-        $sectionOne = 'Classes', 
-        $sectionTwo = 'Who Am I', 
-        $sectionThree = 'Work Experience', 
-        $textOne = 'There are so many amazing classes I have taken since starting college, both related and unrelated to my major program. Here are some of my favorite or most influntial classes and why they left such an impact. ', 
-        $textTwo = 'There are so many experiences and people that introduced me to the things I love to do. Here is a little section on the moments that I think are important when discussing who I am. ', 
-        $textThree = 'Here is a look into my work experience and the tasks I was repsonsible for.');
-    breaks
-
+        $textTag='greenSection', 
+        $color='blockThreeColor', 
+        $sectionOne = 'Favorites', 
+        $sectionTwo = 'Hobbies', 
+        $sectionThree = 'Creations', 
+        $textOne ='When I was younger and journaled more frequently, every once and a while I would document my "favorites" in that moment as a way to store my personality in a few lines. Linked is my current list of favorites. ', 
+        $textTwo='I love being busy, so I try to find hobbies that keep my mind occupied but that also satisfy my creative mind. Here are a few of my hobbies and what role they play in my life.', 
+        $textThree='During quarantine, I had so much time on my hands, and I spent that exploring the artistic side of myself. Here, I have short stories, poems, and art that I want to share.');
+    footer();
     function blocks($blockNumber, $backgroundImage, $row, $block, $linking, $href, $textTag, $color, $sectionOne, $sectionTwo, $sectionThree, $textOne, $textTwo, $textThree){
     echo "<div id='".$blockNumber."'>
     <div id='".$backgroundImage."'>
