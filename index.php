@@ -23,21 +23,18 @@
     <!-- //loop through the sections and echo the block for each section, from here loop through -->
 <!-- 
 
-            <div class='".$block."'>
-                <a class='".$linking."' href='$href'><h2 class='".$color."'>$sectionOne</h2></a>
-                <p class='".$textTag."'> $textOne </p>
-
-            </div>
-            <div class='".$block."'>
-                <a class='".$linking."' href='$href'><h2 class='".$color."'>$sectionTwo</h2></a>
-                <p class='".$textTag."'> $textTwo </p>
-            
-            </div>
-            <div class='".$block."'>
-                <a class='".$linking."' href='$href'><h2 class='".$color."'>$sectionThree</h2></a>
-                <p class='".$textTag."'>$textThree</p>
-            </div>
-
-            // <div class = 'recentPost'>
-        //     <a href='displayPosts.php?postID=$postID'>$post[title]</a>
-        //     <div>$post[summary]</div> -->
+        $blockNumber = 'blockTwo', 
+        $backgroundImage = 'backgroundTwo', 
+        $row = 'row', 
+        $block = 'space', 
+        $linking='linking', 
+        $href='displayPosts.php', 
+        $textTag='aboutMe', 
+        $color='blockTwoColor', 
+        $sectionOne = 'Classes', 
+        $sectionTwo = 'Who Am I', 
+        $sectionThree = 'Work Experience', 
+        $textOne = 'There are so many amazing classes I have taken since starting college, both related and unrelated to my major program. Here are some of my favorite or most influntial classes and why they left such an impact. ', 
+        $textTwo = 'There are so many experiences and people that introduced me to the things I love to do. Here is a little section on the moments that I think are important when discussing who I am. ', 
+        $textThree = 'Here is a look into my work experience and the tasks I was repsonsible for.');
+    breaks
