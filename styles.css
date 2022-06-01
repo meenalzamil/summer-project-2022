@@ -75,7 +75,7 @@ h2 {
 
 
 /* BLOCK TWO */
-.block{
+#blockTwo{
     height: 500px;
     width: 100%;
     position: relative;
@@ -120,7 +120,7 @@ h2 {
 /* BLOCK THREE */
 #backgroundThree{
     background-size: cover;
-    background-image: url(blockThree.jpg); /*take this out then put inline or override like set a default and can override*/
+    background-image: url(blockThree.jpg); 
     position: absolute;
     background-position: 0px 1200px;
     top: 0;
@@ -130,11 +130,11 @@ h2 {
     opacity: 0.5;
     z-index: -1;
 }
-/* #blockThree{
+#blockThree{
     height: 500px;
     width: 100%;
     position: relative;
-} */
+}
 .spaceThree{
     margin: 50px;
     height: 400px; 

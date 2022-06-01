@@ -35,12 +35,6 @@ function firstBlock (){
     </div>
     ";
 }
-//ideally every block should have the same css stuff
-// function echoBlockWrapper ($backgroundImage(include this inline to minimize the css), $innerHTML (whatever content I want with the innerHTML)){
-
-// }
-
-
 function blocks(){
     echo "
     <div class='block'>
