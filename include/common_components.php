@@ -41,31 +41,21 @@ function firstBlock (){
 // }
 
 
-function blocks($blockNumber, $backgroundImage, $row, $block, $linking, $href, $textTag, $color, $sectionOne, $sectionTwo, $sectionThree, $textOne, $textTwo, $textThree){
-    echo "<div id='".$blockNumber."'>
-    <div id='".$backgroundImage."'>
-    </div>
-        <div  class='".$row."'>
-            <div class='".$block."'>
-                <a class='".$linking."' href='$href'><h2 class='".$color."'>$sectionOne</h2></a>
-                <p class='".$textTag."'> $textOne </p>
-
-            </div>
-            <div class='".$block."'>
-                <a class='".$linking."' href='$href'><h2 class='".$color."'>$sectionTwo</h2></a>
-                <p class='".$textTag."'> $textTwo </p>
-            
-            </div>
-            <div class='".$block."'>
-                <a class='".$linking."' href='$href'><h2 class='".$color."'>$sectionThree</h2></a>
-                <p class='".$textTag."'>$textThree</p>
-            </div>
-        </div>
-</div>
-";
-
+function blocks(){
+    echo "
+    <div class='block'>
+        <div  class='row'>
+    ";
 }
-
+function closeBlock(){
+    echo"
+    </div>
+    </div>
+";
+}
+function image($backgroundImage){
+    echo "<div id=$backgroundImage></div>";
+}
 function breaks(){
     echo " 
     <br />
