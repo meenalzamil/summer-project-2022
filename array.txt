@@ -37,3 +37,19 @@
             "summary" => "During quarantine, I had so much time on my hands, and I spent that exploring the artistic side of myself. Here, I have short stories, poems, and art that I want to share."
         ],
     ];
+
+
+                <div class='".$block."'>
+                <a class='".$linking."' href='$href'><h2 class='".$color."'>$sectionOne</h2></a>
+                <p class='".$textTag."'> $textOne </p>
+
+            </div>
+            <div class='".$block."'>
+                <a class='".$linking."' href='$href'><h2 class='".$color."'>$sectionTwo</h2></a>
+                <p class='".$textTag."'> $textTwo </p>
+            
+            </div>
+            <div class='".$block."'>
+                <a class='".$linking."' href='$href'><h2 class='".$color."'>$sectionThree</h2></a>
+                <p class='".$textTag."'>$textThree</p>
+            </div>
