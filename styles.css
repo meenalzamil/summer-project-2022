@@ -130,7 +130,7 @@ h2 {
     opacity: 0.5;
     z-index: -1;
 }
-#blockThree{
+.block{
     height: 500px;
     width: 100%;
     position: relative;
