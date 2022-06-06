@@ -3,7 +3,7 @@
     echoHeader();
     firstBlock();
     breaks();
-    blocks();
+    blocks($blockNumber = 'blockTwo');
     image($backgroundImage='backgroundTwo');
     foreach(getAllPosts() as $postID => $post){
         if ($postID == 3){
@@ -18,7 +18,7 @@
     }
     closeBlock();
     breaks();
-    blocks();
+    blocks($blockNumber = 'blockThree');
     image($backgroundImage='backgroundThree');
     foreach(getAllPosts() as $postID => $post){
         if($postID >= 3){
@@ -32,7 +32,7 @@
     }
     closeBlock();
     breaks();
-    blocks();
+    blocks($blockNumber = 'blockTwo');
     image($backgroundImage = 'backgroundOne');
     echo"
             <div class='spaceThree'>

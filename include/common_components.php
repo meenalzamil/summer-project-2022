@@ -35,9 +35,9 @@ function firstBlock (){
     </div>
     ";
 }
-function blocks(){
+function blocks($blockNumber){
     echo "
-    <div class='block'>
+    <div id='$blockNumber'>
         <div  class='row'>
     ";
 }
