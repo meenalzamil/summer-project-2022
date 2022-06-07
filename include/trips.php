@@ -4,18 +4,9 @@ function getAllTrips(){
     SELECT * 
     FROM `trip` 
     ORDER BY startDate
+
     ")->fetchAll();
     return ($allPosts);
 }
+    // ORDER BY startDate
 
-function getAllPosts(){
-    // $allPosts=getAllPosts();
-    // return $allPosts[$postID];
-   // $matchingID = $tripID + 1;
-    $posts = dbQuery("
-    SELECT *
-    FROM `post`
-    ORDER BY dateOfTravel
-    ")->fetchAll();
-    return($posts);
-}
