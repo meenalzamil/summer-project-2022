@@ -25,7 +25,7 @@ function dbQuery($query, $values=array()){
     global $pdo;
 
     //
-
+//why is this not transerring?
     $stmt = $pdo->prepare($query);
     $stmt->execute($values);
     return $stmt; //To get data out, use ->fetch() for one row or ->fetchAll() for all rows
