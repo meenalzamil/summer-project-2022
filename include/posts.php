@@ -17,3 +17,16 @@ function getIndividualPost($postID){
     ")->fetch();
     return($posts);
 }
+
+// function getPost($postID){
+//     // $allPosts=getAllPosts();
+//     // return $allPosts[$postID];
+//     $matchingID = $postID + 1;
+//     $individualPost = dbQuery("
+//     SELECT *
+//     FROM `posts`
+//     WHERE postID=$matchingID
+//     ")->fetch();
+//     return($individualPost);
+// }
+
