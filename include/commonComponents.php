@@ -6,15 +6,16 @@ function echoHeader() {
     <html>
 
     <head>
-    <title>This is our title!</title>
-    <link rel='stylesheet' href='styles.css'>
-    <link rel='preconnect' href='https://fonts.googleapis.com'>
-    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
-    <link href='https://fonts.googleapis.com/css2?family=Koulen&family=Roboto+Mono:wght@400;500&display=swap' rel='stylesheet'>
+    <title>Welcome!</title>
     </head>
     <body>
-    <div id='beginning'>
-    <p id='header'>M e e n a  &nbsp; Z a m i l</p>
-   </div>
+    <h1 style = 'text-align: center;'>TRAVEL SITE NAME <h1>
+    ";
+}
+
+function footer(){
+    echo "
+    </body>
+    </html>
     ";
 }
