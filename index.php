@@ -31,5 +31,21 @@
          }
     }
     closeBlock();
+    breaks();
+    blocks();
+    image($backgroundImage = 'backgroundOne');
+    echo"
+            <div class='spaceThree'>
+                <a style='color: #27676D' href='comments.php'><h2 class='blockThreeColor'>Give the Comment!</h2></a>
+                <div class='greenSection'>Leave us some comments to look at!</div>
+            </div>
+            ";
+    echo"
+            <div class='spaceThree'>
+                <a style='color: #27676D' href='displayComments.php'><h2 class='blockThreeColor'>Read the Comments!</h2></a>
+                <div class='greenSection'>Read some of the comments left by others!</div>
+            </div>
+            ";
+    closeBlock();
     footer();
     ?>
