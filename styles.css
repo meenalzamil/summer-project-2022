@@ -73,7 +73,11 @@ h2 {
     /* align-items: center; */
 }
 
-
+#blockComment{
+    height: 500px;
+    width: 100%;
+    position: relative;
+}
 /* BLOCK TWO */
 #blockTwo{
     height: 500px;

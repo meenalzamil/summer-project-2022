@@ -32,8 +32,8 @@
     }
     closeBlock();
     breaks();
-    blocks($blockNumber = 'blockTwo');
-    image($backgroundImage = 'backgroundOne');
+    blocks($blockNumber = 'blockComment');
+    // image($backgroundImage = 'backgroundOne');
     echo"
             <div class='spaceThree'>
                 <a style='color: #27676D' href='comments.php'><h2 class='blockThreeColor'>Give the Comment!</h2></a>
