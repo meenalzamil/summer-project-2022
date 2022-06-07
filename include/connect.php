@@ -2,7 +2,7 @@
 
 define('DB_USERNAME', 'root');
 define('DB_PASSWORD', 'root');
-define('DB_DATABASE', 'personal_site');
+define('DB_DATABASE', 'travel-site');
 define('DB_HOSTNAME', 'localhost');
 define('DB_PORT', 3306);
 
@@ -25,7 +25,6 @@ function dbQuery($query, $values=array()){
     global $pdo;
 
     //
-//why is this not transerring?
     $stmt = $pdo->prepare($query);
     $stmt->execute($values);
     return $stmt; //To get data out, use ->fetch() for one row or ->fetchAll() for all rows
