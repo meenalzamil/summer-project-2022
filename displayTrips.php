@@ -1,7 +1,7 @@
 <?php
 include_once('include/initialize.php');
 $ID = $_REQUEST['tripID'];
-echo $ID;
+// echo $ID;
 // $posts = getPosts(0);
 echoHeader();
 echo "

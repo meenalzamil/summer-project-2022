@@ -53,6 +53,8 @@ echo "
 echo "
 <br/>
 ";
+
+//comments
 echo"
 <h3>Leave a comment on this post!<h3>
 ";
