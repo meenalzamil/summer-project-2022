@@ -3,7 +3,7 @@
     echoHeader();
     firstBlock();
     breaks();
-    blocks($blockNumber = 'blockTwo');
+    blocks();
     image($backgroundImage='backgroundTwo');
     foreach(getAllPosts() as $postID => $post){
         if ($postID == 3){
@@ -18,7 +18,7 @@
     }
     closeBlock();
     breaks();
-    blocks($blockNumber = 'blockThree');
+    blocks();
     image($backgroundImage='backgroundThree');
     foreach(getAllPosts() as $postID => $post){
         if($postID >= 3){
@@ -32,8 +32,8 @@
     }
     closeBlock();
     breaks();
-    blocks($blockNumber = 'blockComment');
-    // image($backgroundImage = 'backgroundOne');
+    blocks();
+    image($backgroundImage = 'backgroundOne');
     echo"
             <div class='spaceThree'>
                 <a style='color: #27676D' href='comments.php'><h2 class='blockThreeColor'>Give the Comment!</h2></a>

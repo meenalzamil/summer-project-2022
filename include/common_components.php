@@ -35,9 +35,15 @@ function firstBlock (){
     </div>
     ";
 }
-function blocks($blockNumber){
+// function blocks($blockNumber){
+//     echo "
+//     <div id='$blockNumber'>
+//         <div  class='row'>
+//     ";
+// }
+function blocks(){
     echo "
-    <div id='$blockNumber'>
+    <div class='block'>
         <div  class='row'>
     ";
 }
