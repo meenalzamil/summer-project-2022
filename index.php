@@ -6,7 +6,7 @@ foreach(getAllTrips() as $tripID => $trip){
  
         echo"
         <div >
-            <a style='color: #27676D' href='displayPosts.php?postID=$tripID'>$trip[location]</a>
+            <a style='color: #27676D' href='displayTrips.php?tripID=$tripID'>$trip[location]</a>
             <div class='greenSection'>$trip[blurb]</div>
         </div>
         ";

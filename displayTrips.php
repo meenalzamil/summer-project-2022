@@ -1,10 +1,17 @@
 <?php
 include_once('include/initialize.php');
-$post = getPost($_REQUEST['postID']);
-
+$post = getPosts($_REQUEST['postID']);
+echoHeader();
 echo "
     <p><a href='index.php'>&lt; Return to the home page</a></p>
-    <h1>$post[title]</h1>
-    $post[content]
 ";
 
+foreach(getPosts($post) as $postID => $location){
+    echo"
+    <div >
+        <a href='displayPosts.php?postID=$postID'>$location[location]</a>
+    </div>
+    ";
+ 
+}
+footer();
