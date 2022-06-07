@@ -1,9 +1,9 @@
 <?php
-function getAllPosts(){
+function getAllTrips(){
     $allPosts = dbQuery("
     SELECT * 
     FROM `trip` 
-    ORDER BY datePosted
+    ORDER BY startDate
     ")->fetchAll();
     return ($allPosts);
 }
