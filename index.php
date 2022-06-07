@@ -1,2 +1,5 @@
 <?php
-    include_once ('include/initialize.php');
+
+include_once ('include/initialize.php');
+?>
+
