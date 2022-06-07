@@ -8,14 +8,14 @@ function getAllTrips(){
     return ($allPosts);
 }
 
-function getPosts($tripID){
+function getAllPosts(){
     // $allPosts=getAllPosts();
     // return $allPosts[$postID];
-    $matchingID = $tripID + 1;
-    $individualPost = dbQuery("
+   // $matchingID = $tripID + 1;
+    $posts = dbQuery("
     SELECT *
     FROM `post`
-    WHERE tripID=$matchingID
-    ")->fetch();
-    return($individualPost);
+    ORDER BY dateOfTravel
+    ")->fetchAll();
+    return($posts);
 }

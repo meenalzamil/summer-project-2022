@@ -10,7 +10,6 @@ foreach(getAllTrips() as $tripID => $trip){
             <div class='greenSection'>$trip[blurb]</div>
         </div>
         ";
-     
 }
 footer();
 ?>
