@@ -14,6 +14,18 @@ foreach(getAllTrips() as $index => $trip){
 
         // var_dump($trip);
 }
+echo"
+<h3>Add a new trip!<h3>
+";
+echo"
+<form action='handleNewTrip.php' method='post'>
+    Blurb: <textarea rows='10' cols='30' name='blurb'></textarea><br>
+    Location: <input type='text' name = 'location'><br>
+    Start Date: <input type='date' name= 'startDate'><br>
+    End Date: <input type='date' name= 'endDate'><br>
+    <input type='submit' name='submitButton'>
+</form>
+";
 footer();
 ?>
 

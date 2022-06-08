@@ -17,4 +17,18 @@ foreach(getPosts($ID) as $postIndex => $post){
     ";
  
 }
+echo "<br/>";
+echo "<br/>";
+
+echo"
+<h3>Add a new location to your trip!<h3>
+";
+echo"
+<form action='handleNewPost.php?tripID=$ID' method='post'>
+    Content: <textarea rows='10' cols='30' name='content'></textarea><br>
+    Location: <input type='text' name = 'location'><br>
+    Date Traveled: <input type='date' name= 'dateOfTravel'><br>
+    <input type='submit' name='submitButton'>
+</form>
+";
 footer();
