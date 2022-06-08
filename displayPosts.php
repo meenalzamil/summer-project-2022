@@ -6,7 +6,7 @@ $ID = $_REQUEST['postID'];
 $post = getIndividualPost($_REQUEST['postID']);
 
 echo "
-    <p style='font-size: 10px; text-align = center;><a href='displayTrips.php?tripID=$post[tripID]'>&lt; Return to the trip page</a></p>
+    <p style='font-size: 10px; text-align: center;'><a href='displayTrips.php?tripID=$post[tripID]'>&lt; Return to the trip page</a></p>
     <h1 style='text-align: center'>$post[location]</h1>
     <p style='text-align: center;>$post[content]<p>
 ";
