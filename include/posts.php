@@ -1,31 +1,31 @@
 <?php
 
-function getPosts($tripID){
+function getPosts($tripId){
     $posts = dbQuery("
     SELECT *
     FROM `post`
-    WHERE tripID = $tripID
+    WHERE tripId = $tripId
     ")->fetchAll();
     return($posts);
 }
 
-function getIndividualPost($postID){
+function getIndividualPost($postId){
     $posts = dbQuery("
     SELECT *
     FROM `post`
-    WHERE postID = $postID
+    WHERE postId = $postId
     ")->fetch();
     return($posts);
 }
 
-// function getPost($postID){
+// function getPost($postId){
 //     // $allPosts=getAllPosts();
-//     // return $allPosts[$postID];
-//     $matchingID = $postID + 1;
+//     // return $allPosts[$postId];
+//     $matchingID = $postId + 1;
 //     $individualPost = dbQuery("
 //     SELECT *
 //     FROM `posts`
-//     WHERE postID=$matchingID
+//     WHERE postId=$matchingID
 //     ")->fetch();
 //     return($individualPost);
 // }

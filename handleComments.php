@@ -1,16 +1,20 @@
 <?php
 include_once('include/initialize.php');
 
-$ID = $_REQUEST['postID'];
-$success = createNewComment($ID);
+$postId = $_REQUEST['postId'];
+$name = $_POST["name"];
+$comment = $_POST["comment"];
+echo $name;
+echo $comment;
+$success = createNewComment($name, $comment, $postId);
 if ($success == "success"){
     // echo $success;
     echo "You successfully created a comment!";
-    echo "<p><a href='../displayPosts.php?postID=$ID'>&lt; Go View Your New Comment</a></p>";
+    echo "<p><a href='../displayPosts.php?postId=$postId'>&lt; Go View Your New Comment</a></p>";
 }
 else{
     // echo $success;
     echo "Creation of comment failed.";
-    echo "<p><a href='../displayPosts.php?postID=$ID'>&lt; Try Again</a></p>";
+    echo "<p><a href='../displayPosts.php?postId=$postId'>&lt; Try Again</a></p>";
 
 }

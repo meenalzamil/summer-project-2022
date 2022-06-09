@@ -1,30 +1,26 @@
 <?php
 include_once('include/initialize.php');
-$ID = $_REQUEST['tripID'];
-// echo $ID;
+$id = $_REQUEST['tripId'];
+// echo $id;
 // $posts = getPosts(0);
 echoHeader();
 echo "
     <p><a href='index.php'>&lt; Return to the home page</a></p>
 ";
 
-foreach(getPosts($ID) as $postIndex => $post){
+foreach(getPosts($id) as $postIndex => $post){
  
     echo"
     <div >
-        <a style='color: #27676D' href='displayPosts.php?postID=$post[postID]'>$post[location]</a>
+        <a style='color: #27676D' href='displayPosts.php?postId=$post[postId]'>$post[location]</a>
     </div>
     ";
  
 }
-echo "<br/>";
-echo "<br/>";
-
-echo"
+echo "<br/>
+<br/>
 <h3>Add a new location to your trip!<h3>
-";
-echo"
-<form action='handleNewPost.php?tripID=$ID' method='post'>
+<form action='handleNewPost.php?tripId=$id' method='post'>
     Content: <textarea rows='10' cols='30' name='content'></textarea><br>
     Location: <input type='text' name = 'location'><br>
     Date Traveled: <input type='date' name= 'dateOfTravel'><br>

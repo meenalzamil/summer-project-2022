@@ -1,7 +1,10 @@
 <?php
 include_once('include/initialize.php');
-
-$success = createNewTrip();
+$location = $_POST["location"];
+$blurb = $_POST["blurb"]; 
+$startDate = $_POST["startDate"]; 
+$endDate = $_POST["endDate"]; 
+$success = createNewTrip($location, $blurb, $startDate, $endDate);
 if ($success == "success"){
     // echo $success;
     echo "You successfully created a trip!";

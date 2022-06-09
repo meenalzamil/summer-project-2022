@@ -1,10 +1,10 @@
 <?php
 
-function getComments($postID){
+function getComments($postId){
     $comments = dbQuery("
     SELECT *
     FROM `comments`
-    WHERE postID = $postID
+    WHERE postId = $postId
     ")->fetchAll();
     return($comments);
 }

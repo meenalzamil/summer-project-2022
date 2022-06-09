@@ -1,23 +1,17 @@
 <?php
 include_once('include/initialize.php');
-$ID = $_REQUEST['postID'];
-$post = getIndividualPost($_REQUEST['postID']);
+$postId = $_REQUEST['postId'];
+$post = getIndividualPost($_REQUEST['postId']);
 
 echo "
-    <p><a href='displayTrips.php?tripID=$post[tripID]'>&lt; Return to the trip page</a></p>
+    <p><a href='displayTrips.php?tripId=$post[tripId]'>&lt; Return to the trip page</a></p>
     <h1>$post[location]</h1>
     $post[content]
-";
-echo "
-<br/>
-";
-echo "
-<br/>
-";
-echo "
+    <br/>
+    <br/>
     <h3>Comments</h3>
 ";
-foreach(getComments($ID) as $commentIndex => $comment){
+foreach(getComments($postId) as $commentIndex => $comment){
  
     echo"
     <div >
@@ -40,7 +34,7 @@ echo"
 <h3>Leave a comment on this post!<h3>
 ";
 echo"
-<form action='handleComments.php?postID=$ID' method='post'>
+<form action='handleComments.php?postId=$postId' method='post'>
     Comment: <textarea rows='10' cols='30' name='comment'></textarea><br>
     Name: <input type='text' name = 'name'><br>
     <input type='submit' name='submitButton'>

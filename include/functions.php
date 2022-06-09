@@ -1,13 +1,13 @@
 <?php
 include_once('initialize.php');
-function createNewComment($postID){
-    $name = $_POST["name"];
-    $comment = $_POST["comment"];
+function createNewComment($name, $comment, $postId){
+    // $name = $_POST["name"];
+    // $comment = $_POST["comment"];
     $successfulCommentInsertion = false;
     if (!empty($name) && !empty($comment)){
         $successfulCommentInsertion = dbQuery("
-        INSERT INTO comments (name, comment, postID)
-        VALUES ('$name', '$comment', '$postID')
+        INSERT INTO comments (name, comment, postId)
+        VALUES ('$name', '$comment', '$postId')
     ");
     }
     if ($successfulCommentInsertion){
@@ -18,16 +18,12 @@ function createNewComment($postID){
     }
 }
 
-function createNewPost($tripID){
-    $location = $_POST["location"];
-    $content = $_POST["content"];
-    $dateOfTravel = $_POST["dateOfTravel"];
-
-    $successfulPostInsertion = false;
+function createNewPost($location, $content, $dateOfTravel, $tripId){
+    // $successfulPostInsertion = false;
     if (!empty($location) && !empty($content) && !empty($dateOfTravel)){
         $successfulPostInsertion = dbQuery("
-        INSERT INTO post (location, dateOfTravel, content, tripID)
-        VALUES ('$location', '$dateOfTravel', '$content', '$tripID')
+        INSERT INTO post (location, dateOfTravel, content, tripId)
+        VALUES ('$location', '$dateOfTravel', '$content', '$tripId')
     ");
     }
     if ($successfulPostInsertion){
@@ -37,11 +33,7 @@ function createNewPost($tripID){
         return "error";
     }
 }
-function createNewTrip(){
-    $location = $_POST["location"];
-    $blurb = $_POST["blurb"]; 
-    $startDate = $_POST["startDate"]; 
-    $endDate = $_POST["endDate"]; 
+function createNewTrip($location, $blurb, $startDate, $endDate){
     $result = false;
     if(!empty($location) && !empty($blurb) && !empty($startDate) && !empty($endDate)){
         // if($location != " " && $blurb != " " && $startDate != " " && $endDate != " "){
