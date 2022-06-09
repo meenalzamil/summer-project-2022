@@ -23,8 +23,6 @@ $pdo = new PDO($dsn, DB_USERNAME, DB_PASSWORD, $opt);
 //Other note: if we need to specify the data type, check this out: http://php.net/manual/en/pdostatement.bindvalue.php
 function dbQuery($query, $values=array()){
     global $pdo;
-
-    //
     $stmt = $pdo->prepare($query);
     $stmt->execute($values);
     return $stmt; //To get data out, use ->fetch() for one row or ->fetchAll() for all rows

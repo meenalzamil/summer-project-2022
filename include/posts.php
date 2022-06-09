@@ -18,15 +18,3 @@ function getIndividualPost($postId){
     return($posts);
 }
 
-// function getPost($postId){
-//     // $allPosts=getAllPosts();
-//     // return $allPosts[$postId];
-//     $matchingID = $postId + 1;
-//     $individualPost = dbQuery("
-//     SELECT *
-//     FROM `posts`
-//     WHERE postId=$matchingID
-//     ")->fetch();
-//     return($individualPost);
-// }
-

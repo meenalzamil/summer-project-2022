@@ -8,5 +8,4 @@ function getAllTrips(){
     ")->fetchAll();
     return ($allPosts);
 }
-    // ORDER BY startDate
 
