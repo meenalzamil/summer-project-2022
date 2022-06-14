@@ -24,15 +24,8 @@ foreach(getComments($postId) as $commentIndex => $comment){
 }
 echo "
 <br/>
-";
-echo "
 <br/>
-";
-
-echo"
 <h3>Leave a comment on this post!<h3>
-";
-echo"
 <form action='handleComments.php?postId=$postId' method='post'>
     Comment: <textarea rows='10' cols='30' name='comment'></textarea><br>
     Name: <input type='text' name = 'name'><br>

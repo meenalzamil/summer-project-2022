@@ -3,7 +3,7 @@ include_once('initialize.php');
 function createNewComment($name, $comment, $postId){
     global $pdo;
     if (!empty($name) && !empty($comment)){
-            dbQuery("
+        dbQuery("
             INSERT INTO comments (name, comment, postId)
             VALUES ('$name', '$comment', '$postId')
         ");
@@ -14,7 +14,7 @@ function createNewComment($name, $comment, $postId){
 function createNewPost($location, $content, $dateOfTravel, $tripId){
     global $pdo;
     if (!empty($location) && !empty($content) && !empty($dateOfTravel)){
-            dbQuery("
+        dbQuery("
             INSERT INTO post (location, dateOfTravel, content, tripId)
             VALUES ('$location', '$dateOfTravel', '$content', '$tripId')
         ");
@@ -25,7 +25,7 @@ function createNewPost($location, $content, $dateOfTravel, $tripId){
 function createNewTrip($location, $blurb, $startDate, $endDate){
     global $pdo;
     if(!empty($location) && !empty($blurb) && !empty($startDate) && !empty($endDate)){
-            dbQuery("
+        dbQuery("
             INSERT INTO trip (location, blurb, startDate, endDate)
             VALUES ('$location', '$blurb', '$startDate', '$endDate')
         ");
