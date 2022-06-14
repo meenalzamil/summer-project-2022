@@ -8,10 +8,10 @@ $endDate = $_POST["endDate"];
 $success = createNewTrip($location, $blurb, $startDate, $endDate);
 if ($success){
     echo "You successfully created a trip!";
-    echo "<a href=index.php>Go back to home page to view</a>";
+    echo '<a href=index.php>Go back to home page to view</a>';
 }
 else{
     echo "Creation of trip failed.";
-    echo "<a href=index.php>Go back to home page to try again</a>";
+    echo '<a href=index.php>Go back to home page to try again</a>';
 
 }
