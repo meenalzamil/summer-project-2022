@@ -14,8 +14,8 @@
             Date Started: <input type='date' name='startDate'>
             Date Ended: <input type='date' name='endDate'> 
             <br>
-            X Coordinate: <input type='number' name='xCord'>
-            Y Coordinate: <input type='number' name='yCord'>
+            <input type='hidden' name='xCord' id='xCord'>
+            <input type='hidden' name='yCord' id='yCord'>
 
             <input type="submit" value="Submit">
         </form>
@@ -32,6 +32,10 @@
         <script type="text/javascript">
             function getMousePosition(canvas, event) {
                 let rect = canvas.getBoundingClientRect();
+                console.log(event.clientX);
+                console.log(rect.left);
+
+
                 let x = event.clientX - rect.left;
                 let y = event.clientY - rect.top;
                 const array = [];
@@ -39,8 +43,8 @@
                 array[1] = y;
                 // console.log ("Coordinate x: " + x + ", Coordinate y: " + y);
                 console.log (array);
-                document.getElementById('xCoordinate').innerHTML = "The X Coordinate is: " +  x;
-                document.getElementById('yCoordinate').innerHTML = "The Y Coordinate is: " + y;
+                document.getElementById('xCord').value = x;
+                document.getElementById('yCord').value = y;
 
             }
         

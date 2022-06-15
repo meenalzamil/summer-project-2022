@@ -29,7 +29,7 @@ function createNewPost($location, $content, $dateOfTravel, $tripId){
 
 function createNewTrip($location, $blurb, $startDate, $endDate, $xCoord, $yCoord){
     global $pdo;
-    if(!empty($location) && !empty($blurb) && !empty($startDate) && !empty($endDate)  && !empty($xCoord)  && !empty($yCoord)){
+    if(!empty($location) && !empty($blurb) && !empty($startDate) && !empty($endDate) && isset($xCoord)  && isset($yCoord)){
         $result = dbQuery("
             INSERT INTO trip (location, blurb, startDate, endDate, xCoordinate, yCoordinate)
             VALUES ('$location', '$blurb', '$startDate', '$endDate', '$xCoord', '$yCoord')
