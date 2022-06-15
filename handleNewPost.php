@@ -7,7 +7,8 @@ $tripId = $_REQUEST['tripId'];
 
 
 $success = createNewPost($location, $content, $dateOfTravel, $tripId);
-if ($success == "success"){
+
+if ($success){
     echo "You successfully created a post!";
     echo "<p><a href='../displayTrips.php?tripId=$tripId'>&lt; Go View Your New Post</a></p>";
 }

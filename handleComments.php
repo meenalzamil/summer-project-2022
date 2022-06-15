@@ -4,10 +4,10 @@ include_once('include/initialize.php');
 $postId = $_REQUEST['postId'];
 $name = $_POST["name"];
 $comment = $_POST["comment"];
-echo $name;
-echo $comment;
+
 $success = createNewComment($name, $comment, $postId);
-if ($success == "success"){
+
+if ($success){
     echo "You successfully created a comment!";
     echo "<p><a href='../displayPosts.php?postId=$postId'>&lt; Go View Your New Comment</a></p>";
 }
