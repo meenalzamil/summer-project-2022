@@ -6,7 +6,7 @@
 <html>
     <head>
         <title>
-            How to get the coordinates of a mouse click on a canvas element?
+            See all trips on the map!
         </title>
     </head>
     
@@ -22,13 +22,12 @@
 
             function renderTrips(allTrips){
                 var canvas = document.getElementById("myCanvas");
-                var ctx = canvas.getContext("2d");
-                allTrips.forEach(function (Trip){
-                    ctx.beginPath();
-                    ctx.arc(Trip['xCoordinate'], Trip['yCoordinate'], 3, 0, 2 * Math.PI);
-                    ctx.stroke();
+                var drawingContext = canvas.getContext("2d");
+                allTrips.forEach(function (trip){
+                    drawingContext.beginPath();
+                    drawingContext.arc(trip['xCoordinate'], trip['yCoordinate'], 3, 0, 2 * Math.PI);
+                    drawingContext.stroke();
                 });
-                console.log(allTrips);
             }
         </script>
     </body>

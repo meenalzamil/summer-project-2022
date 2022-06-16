@@ -3,7 +3,7 @@
       
     <head>
         <title>
-            How to get the coordinates of a mouse click on a canvas element?
+            Add a new trip to the map!
         </title>
     </head>
     
@@ -32,16 +32,11 @@
         <script type="text/javascript">
             function getMousePosition(canvas, event) {
                 let rect = canvas.getBoundingClientRect();
-                console.log(event.clientX);
-                console.log(rect.left);
-
-
-                let x = event.clientX - rect.left;
-                let y = event.clientY - rect.top;
+                const x = event.clientX - rect.left;
+                const y = event.clientY - rect.top;
                 const array = [];
                 array[0] = x;
                 array[1] = y;
-                // console.log ("Coordinate x: " + x + ", Coordinate y: " + y);
                 console.log (array);
                 document.getElementById('xCord').value = x;
                 document.getElementById('yCord').value = y;
