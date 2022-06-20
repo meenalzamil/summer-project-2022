@@ -11,10 +11,10 @@ $yCoordinate = $_POST["yCord"];
 $success = createNewTrip($location, $startDate, $endDate, $xCoordinate, $yCoordinate, $blurb);
 if ($success){
     echo "You successfully created a trip!";
-    echo '<a href=addTrip.html>Go back to home page to view</a>';
+    echo "<a href='addTrip.html'>Go back to home page to view</a>";
 }
 else{
     echo "Creation of trip failed.";
-    echo '<a href=addTrip.html>Go back to home page to try again</a>';
+    echo "<a href='addTrip.html'>Go back to home page to try again</a>";
 
 }
