@@ -13,7 +13,7 @@
     <body>
         <div style='text-align: center; margin-top: 100px; position: relative;'>
             <canvas id = 'myCanvas' width="800" height="600"
-            style="background-color: orange">
+                style="background-color: orange">
             </canvas>
         </div>
        

@@ -34,10 +34,7 @@
                 let rect = canvas.getBoundingClientRect();
                 const x = event.clientX - rect.left;
                 const y = event.clientY - rect.top;
-                const array = [];
-                array[0] = x;
-                array[1] = y;
-                console.log (array);
+                const array = [x, y];
                 document.getElementById('xCord').value = x;
                 document.getElementById('yCord').value = y;
 
