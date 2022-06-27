@@ -66,6 +66,14 @@ header{
     justify-content: space-between;
     align-items: center;
 } 
+#mapContainer{
+    height: 700px;
+    z-index: -1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 #frameOne{
     z-index: -1;
     width: 525px;
@@ -83,7 +91,10 @@ header{
     height: 520px;
     width: 500px;
     margin-left: 300px;
-    background-color: red;
+    background-image: url(homeImage.png);
+    /* background-color: green; */
+    background-size: 800px;
+    background-position: 65% 75%;
     border-radius: 360px 360px 0px 0px;
     margin-top: -460px;
 }
@@ -92,4 +103,35 @@ header{
     margin-left: 150px;
     color: #FBFDFD;
     padding:0;
+}
+
+#homePageMap{
+    z-index: -1;
+    margin-top: -30px;
+    width: 100%;
+    height: 760px;
+    background-size: 100%;
+    background-position: bottom 52em right 0;
+    background-image: url(map.png);
+}
+
+#mapText{
+    height: 100px;
+    width:70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #8EB1D0;
+    font-family: 'Tangerine', cursive;
+    font-size: 60px;
+    color: #FBFDFD;
+}
+
+
+#mapConatiner{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
