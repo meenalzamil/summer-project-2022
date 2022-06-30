@@ -28,14 +28,35 @@ function firstPageIntro(){
 }
 
 function homePageMap(){
+    $allTrips = getAllTrips();
     echo"
     <div id='mapConatiner'>
         <div id='mapText'>
             <p>Explore the World</p>
         </div>
     </div>
-    <div id='mapContainer'>
-        <div id='homePageMap'></div>
-    </div>
+    <div style='text-align: center; margin-top: 100px; position: relative;'>
+            <canvas id = 'myCanvas' width='900px' height='760px'
+                style='
+                z-index: -1;
+                margin-top: -30px 0 0 0;
+                width: 100%;
+                height: 760px;
+                background-size: 100%;
+                background-position: bottom 52em right 0;
+                background-image: url(map.png);
+                '>
+            </canvas>
+        </div>
     ";
+    echo '<script src="/map.js" type="text/javascript">',
+     'renderTrips();',
+     '</script>'
+;
+   
 }
+
+// <div id='mapContainer'>
+// <div id='homePageMap'></div>
+
+// </div>
