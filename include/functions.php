@@ -22,14 +22,13 @@ function createNewPost($location, $content, $dateOfTravel, $tripId){
     }
 }
 
-function createNewTrip($location, $startDate, $endDate, $xCoord, $yCoord){
+function createNewTrip($location, $startDate, $endDate, $xCoord, $yCoord, $xLength, $yLength){
     global $pdo;
-    if(!empty($location) && !empty($startDate) && !empty($endDate) && isset($xCoord)  && isset($yCoord)){
+    if(!empty($location) && !empty($startDate) && !empty($endDate) && isset($xCoord)  && isset($yCoord) && isset($xLength)  && isset($yLength)){
         $result = dbQuery("
-            INSERT INTO trip (location, blurb, startDate, endDate, xCoordinate, yCoordinate)
-            VALUES ('$location', '$startDate', '$endDate', '$xCoord', '$yCoord')
+            INSERT INTO trip (location, startDate, endDate, xCoordinate, yCoordinate, totalXLength, totalYLength)
+            VALUES ('$location', '$startDate', '$endDate', '$xCoord', '$yCoord', '$xLength', '$yLength')
         ");
     return $newId = $pdo->lastInsertId();
     }
 }
-
