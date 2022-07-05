@@ -32,4 +32,3 @@ function createNewTrip($location, $startDate, $endDate, $xCoord, $yCoord, $xLeng
     return $newId = $pdo->lastInsertId();
     }
 }
-

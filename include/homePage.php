@@ -22,39 +22,56 @@ function firstPageIntro(){
 </br>
 </br>
 </br>
-</br>
-</br>
+
 ";
 }
 
-function homePageMap(){
+// function homePageMap(){
+//     $allTrips = getAllTrips();
+//     echo"
+//     <div id='mapConatiner'>
+//         <div id='mapText'>
+//             <p>Explore the World</p>
+//         </div>
+//     </div>
+//     <div id='showMap'>
+//     </div>
+//     <script src='map.js' type='text/javascript'>
+//         </script>
+//         <script>
+          
+//             var map = document.querySelector('#showMap');
+//             renderTrips(".json_encode($allTrips).", map);
+
+            
+//         </script>
+// ";
+   
+// }
+function showMap(){
     $allTrips = getAllTrips();
     echo"
-    <div id='mapConatiner'>
+    <div id='centeringHomePageMap'>
         <div id='mapText'>
             <p>Explore the World</p>
         </div>
-    </div>
-    <div style='text-align: center; margin-top: 100px; position: relative;'>
-            <canvas id = 'myCanvas' width='900px' height='760px'
-                style='
-                z-index: -1;
-                margin-top: -30px 0 0 0;
-                width: 100%;
-                height: 760px;
-                background-size: 100%;
-                background-position: bottom 52em right 0;
-                background-image: url(map.png);
-                '>
-            </canvas>
+        <div id='showMap'>
         </div>
+    </div>
     ";
-    echo '<script src="/map.js" type="text/javascript">',
-     'renderTrips();',
-     '</script>'
-;
-   
+    echo"
+        <script src='map.js' type='text/javascript'>
+        </script>
+        <script>
+          
+            var map = document.querySelector('#showMap');
+            renderTrips(".json_encode($allTrips).", map);
+
+            
+        </script>
+    ";
 }
+
 
 // <div id='mapContainer'>
 // <div id='homePageMap'></div>

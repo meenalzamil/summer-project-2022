@@ -1,7 +1,7 @@
 <?php
 include_once('include/initialize.php');
-echoHeader();
+echoHeader('Home Page');
 navBar();
 firstPageIntro();
-homePageMap();
+showMap();
 footer();

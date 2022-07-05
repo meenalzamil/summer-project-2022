@@ -41,14 +41,14 @@ header{
 /* HOME PAGE */
 #greenHomePageBox{
     z-index: -1;
-    width: 525px;
-    height: 520px;
+    width: 40%;
+    height: 70vh;
     background: #C8D090;
 }
 #blueHomePageBox{
     z-index: -1;
-    width: 850;
-    height: 520px;
+    width: 50%;
+    height: 70vh;
     margin:0;
     background: #254159;
     display: flex;
@@ -66,8 +66,8 @@ header{
 } 
 #frameOne{
     z-index: -1;
-    width: 525px;
-    height: 560px;
+    width: 110%;
+    height: 70vh;
     margin-top: -50px;
 }
 
@@ -78,14 +78,14 @@ header{
 }
 
 #firstPageImage{
-    height: 520px;
-    width: 500px;
-    margin-left: 300px;
+    height: 80vh;
+    width: 40%;
+    margin-left: 20%;
     background-image: url(homeImage.png);
-    background-size: 800px;
+    background-size: 90vw;
     background-position: 65% 75%;
     border-radius: 360px 360px 0px 0px;
-    margin-top: -460px;
+    margin-top: -60vh;
 }
 .firstPage{
     width:400px;
@@ -93,24 +93,32 @@ header{
     color: #FBFDFD;
     padding:0;
 }
-#homePageMap{
-    z-index: -1;
-    margin-top: -30px;
-    width: 100%;
-    height: 100vh;
-    background-size: 100%;
-    background-position: bottom 52em right 0;
-    background-image: url(map.png);
+
+
+#centeringHomePageMap{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#8EB1D0;
+    z-index: inherit;
 }
 #showMap{
-    position: relative;
-    z-index: -1;
-    width: 100vw;
-    height: 100vh;
     background-size: 100%;
-    background-position: bottom 52em right 0;
     background-image: url(map.png);
+    height:714;
+    width:1186.5;
 }
+/* #homePageMapContainer{
+    width:70%;
+    height:90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+
+
 
 #mapText{
     height: 100px;
@@ -119,19 +127,13 @@ header{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: #8EB1D0;
+    background-color: #254159;
     font-family: 'Tangerine', cursive;
     font-size: 60px;
     color: #FBFDFD;
+    margin-bottom: -30px;
 }
 
-
-#mapConatiner{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
 #mapContainer{
     height: 700px;
     z-index: -1;
@@ -204,4 +206,104 @@ header{
     background-color: tan;
     border-radius: 360px 360px 0 0 ;
 }
+
+#postcardNewTrip {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#postcardMapContainer{
+    width:70%;
+    height:90vh;
+    background-color:#C8D090;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#postcardMap{
+    /* margin-top: -30px; */
+    background-size: 100%;
+    /* background-position: bottom 52em right 0; */
+    background-image: url(map.png);
+    width:90%;
+    height:75vh;
+}
+#postcardInputContainer{
+    width:30%;
+    height:90vh;  
+    background-color:#C8D090;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#postStamp{
+    width:22%;
+    height:15vh;  
+    background-image: url(blueWaterColor.png);
+}
+#postcardInputFields{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    /* border: 3px solid #b1f1fc; */
+    width:100%;
+    height:50vh;  
+}
+#vlContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    width:3px;
+    background-color: #C8D090;
+}
+#vl{
+    border-left: 3px solid black;
+    height: 80vh;
+}
+#rightSidePostcardSpacing{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 80vh;
+    width:77%;
+    background-color: #C8D090;
+}
+#postcardLabel{
+    font-family: 'Tangerine', cursive;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: -5vh;
+}
+input[type=text], input[type=date]{
+    width:15vw;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px solid;
+    padding: 10px;
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    background-color: #C8D090;
+  }
+input[type=submit]{
+    width:15vw;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px solid;
+    padding: 10px;
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    background-color: #C8D090;
+    cursor: pointer;
+  }
+  
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color:black;
+  }
 

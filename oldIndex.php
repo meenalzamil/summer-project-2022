@@ -1,7 +1,7 @@
 <?php
 
 include_once ('include/initialize.php');
-echoHeader();
+echoHeader('Old Indexed Page');
 foreach(getAllTrips() as $index => $trip){
  
         echo"

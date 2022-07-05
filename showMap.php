@@ -1,26 +1,8 @@
 <?php
     include_once('include/initialize.php');    
-    echoHeader();
+    echoHeader('All Pinned Trips');
     // navBar();
-
-    $allTrips = getAllTrips();
-    echo"
-        <div id='showMap'>
-        </div>
-  
-    ";
-    echo"
-        <script src='map.js' type='text/javascript'>
-        </script>
-        <script>
-          
-            var map = document.querySelector('#showMap');
-            renderTrips(".json_encode($allTrips).", map);
-
-            
-        </script>
-    ";
-
+    showMap();
     footer(); 
 ?>
 

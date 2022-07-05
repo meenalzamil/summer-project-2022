@@ -1,7 +1,7 @@
 <?php
 include_once('initialize.php');
 
-function echoHeader() {
+function echoHeader($title) {
     echo "
     <html lang='en'>
     <head>
@@ -12,7 +12,7 @@ function echoHeader() {
         <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
         <link href='https://fonts.googleapis.com/css2?family=Koulen&family=Roboto+Slab:wght@200&family=Tangerine&display=swap' rel='stylesheet'>
         <link href='styles.css' rel='stylesheet' type='text/css'>
-        <title>Nav Bar</title>
+        <title>$title</title>
     </head>
     <body>
     ";
@@ -30,10 +30,10 @@ function navBar(){
     <header>
         <div class='navbar'>
             <ul class='nav-list'>
-                <li class='nav-item'><a href='#'>Home</a></li>
+                <li class='nav-item'><a href='../index.php'>Home</a></li>
                 <li class='nav-item'><a href='#'>All Trips</a></li>
                 <img src='logo.png' alt='logo' class='logo' height='125' width='175'>
-                <li class='nav-item'><a href='#'>New Trip</a></li>
+                <li class='nav-item'><a href='../addTrip.php'>New Trip</a></li>
                 <li class='nav-item'><a href='#'>Bucket List</a></li>
             </ul>
         </div>
