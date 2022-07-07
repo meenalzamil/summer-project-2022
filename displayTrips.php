@@ -1,7 +1,7 @@
 <?php
 include_once('include/initialize.php');
 $tripId = $_REQUEST['tripId'];
-echoHeader('All Trips');
+echoHeader();
 echo "
     <p><a href='index.php'>&lt; Return to the home page</a></p>
 ";
