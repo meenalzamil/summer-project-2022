@@ -27,10 +27,17 @@ function renderTrips(allTrips, map){
         // console.log(finalXCoordinate + ", " + finalYCoordinate);
 
         img.src = "airballoon-20x18.png";
-        img.id=trip['location'];
+        img.id=trip['tripId'];
+        img.class=trip['location'];
         img.style.position="absolute";
         img.style.left=finalXCoordinate -9;
         img.style.top=finalYCoordinate-15;
+
+        img.addEventListener("mouseenter", () => hoverOverBalloon(trip['tripId']));
+        img.addEventListener("mouseleave", () => leavingBalloon(trip['tripId']));
+        img.addEventListener("click", () => redirectToTrip(trip['tripId']));
+
+
         tripName.className='airballoon';
         tripName.id=trip['location'];
         tripName.value=trip['location'];
@@ -40,12 +47,14 @@ function renderTrips(allTrips, map){
         parent.appendChild(img);
     });
 }
-{/* <div class="container">
-  <img src="img_avatar.png" alt="Avatar" class="image" style="width:100%">
-  <div class="middle">
-    <div class="text">John Doe</div>
-  </div>
-</div> */}
+function hoverOverBalloon($tripId){
+  // figure out where on page it is and then create some html, maybe pass x and y coordinates too
+  //when I add text to page, give it a specific id that I can take away using leavingBalloon
+}
+function redirectToTrip($tripId){
+  //change url javascript
+}
+
 function getMousePosition(home, event) {
     console.log("HOME", {home});
     // console.log({event});

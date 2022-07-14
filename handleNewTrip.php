@@ -7,17 +7,13 @@ $xCoordinate = $_POST["xCord"];
 $yCoordinate = $_POST["yCord"];
 $totalXLength = $_POST["xLength"];
 $totalYLength = $_POST["yLength"];
-// $filePath=$_POST["image_upload"];
-// echo $filePath;
-var_dump(isset($_FILES['img_submit']));
-if(isset($_FILES['img_upload'])){
-    echo $_FILES['img_upload']['tmp_name'];
+$filePath=$_FILES['img_upload']['name'];
+
+if(isset($_FILES['img_upload']['name'])){
+    $img_name=$_FILES['img_upload']['name'];
+    $tmp_img_name=$_FILES['img_upload']['tmp_name'];
+    move_uploaded_file($tmp_img_name, "photos/".$img_name);
 }
-// if (isset($_POST['img_submit'])){
-//     $img_name=$_FILES['img_upload']['name'];
-//     $tmp_img_name=$_FILES['img_upload']['tmp_name'];
-//     move_uploaded_file($tmp_img_name, "photos/".$img_name);
-// }
 
 $success = createNewTrip($location, $startDate, $endDate, $xCoordinate, $yCoordinate, $totalXLength, $totalYLength, $filePath);
 if ($success){

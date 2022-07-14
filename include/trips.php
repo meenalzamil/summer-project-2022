@@ -9,12 +9,12 @@ function getAllTrips(){
     return ($allPosts);
 }
 
-function tripHeader(){
+function tripHeader($tripHeaderImage, $tripLocation){
     echo"
     <div id='tripHeader'>
-        <div id='tripImage'>
+        <div id='tripImage' style='background-image: photos/$tripHeaderImage'>
             <div id='tripText'>
-                <p id='tripLocation'>SPAIN</p>
+                <p id='tripLocation'>$tripLocation</p>
                 <a id='newPost' href='#'>NEW POST</a>
             </div>
         </div>
@@ -47,3 +47,5 @@ function postSectionOfTrip(){
         </div>
     ";
 }
+
+//onmouseenter, onmouseleave

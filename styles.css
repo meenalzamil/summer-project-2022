@@ -158,7 +158,7 @@ header{
 #tripImage{
     height: 550px;
     width: 550px;
-    background-image: url(testTripImage.png);
+    /* background-image: url(testTripImage.png); */
     background-size: 100%;
     border-radius: 360px;
     margin-left: 325px;
