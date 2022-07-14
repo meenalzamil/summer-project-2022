@@ -19,17 +19,18 @@ echo"
                 <div id='postcardInputFields'>
                 <h2 id='postcardLabel'>Mail in your newest trip destination</h2>
 
-                <form action='handleNewTrip.php' method='post'></br></br>
+                <form enctype='multipart/form-data' action='handleNewTrip.php' method='post'></br></br>
                     <input type='text' id='location' name='location' placeholder='Location'></br></br>
                     <input type='date' id='startDate' name='startDate' placeholder='Date Started'></br></br>
                     <input type='date' id='endDate' name='endDate' placeholder='Date Ended'></br></br>
+                    <input type='file' name='img_upload'>
                     
                     <input type='hidden' step='0.01' name='xCord' id='xCord'>
                     <input type='hidden' step='0.01' name='yCord' id='yCord'>
                     <input type='hidden' step='0.01' name='xLength' id='xLength'>
                     <input type='hidden' step='0.01' name='yLength' id='yLength'>
                     
-                    <input type='submit' id='submitTrip' value='Submit'>
+                    <input type='submit' name='img_submit' id='submitTrip' value='Submit'>
                 </form>
 
                 </div>

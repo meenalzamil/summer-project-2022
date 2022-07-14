@@ -197,6 +197,10 @@ header{
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    column-gap: 5vh;
+}
+.locationOfPost{
+    background-color: pink;
 }
 .individualPost{
     top: 100px;
@@ -241,7 +245,7 @@ header{
 #postStamp{
     width:22%;
     height:15vh;  
-    background-image: url(blueWaterColor.png);
+    background-image: url(bluewatercolor.jpg);
 }
 #postcardInputFields{
     display: flex;
@@ -279,7 +283,7 @@ header{
     font-size: 40px;
     margin-bottom: -5vh;
 }
-input[type=text], input[type=date]{
+input[type=text], input[type=date], input[type=file]{
     width:15vw;
     border-top: 0;
     border-left: 0;
@@ -291,11 +295,9 @@ input[type=text], input[type=date]{
     background-color: #C8D090;
   }
 input[type=submit]{
+    padding-top: 5vh;
     width:15vw;
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
-    border-bottom: 2px solid;
+    border: 2px solid;
     padding: 10px;
     font-family: 'Roboto Slab', serif;
     text-align: center;
